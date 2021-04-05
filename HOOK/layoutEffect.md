@@ -1,0 +1,9 @@
+# layoutEffect Hook
+
+对DOM进行了改动，浏览器会在下一次渲染时间到达的时候统一渲染
+
+和useEffect的区别就是，前者会在UI渲染完成之后异步进行，这个会在完成了DOM操作的时候同步进行
+
+uselayoutEffect：完成了DOM改动但是还没有呈现给用户，在这里进行操作可能会阻塞渲染
+
+时间点类似于：componentDidMount componentDiUpdate
